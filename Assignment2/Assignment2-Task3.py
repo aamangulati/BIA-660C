@@ -36,8 +36,4 @@
         mean = sum(nums)/len(nums)
         return (sum([(num-mean)**2 for num in nums])/len(nums))**0.5
 
-    def get_rows_where_column_has_value(self, column_name, value, index_only=False):
-        if index_only:
-            return [index for index, row_value in enumerate(self[column_name]) if row_value==value]
-        else:
-            return [row for row in self.data if row[column_name]==value]
+    
